@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/et_idBuku"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="ID_buku"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_jmlBuku"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Jumlah buku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_penerbit" />
+
+    <EditText
+        android:id="@+id/et_penerbit"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Penerbit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pengarang" />
+
+    <EditText
+        android:id="@+id/et_pengarang"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Pengarang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_kategori" />
+
+    <EditText
+        android:id="@+id/et_kategori"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Kategori"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Nama" />
+
+    <EditText
+        android:id="@+id/et_Nama"
+        android:layout_width="371dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Judul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_idBuku" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="191dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:text="Simpan"
+        android:backgroundTint="#6b9080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_jmlBuku" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="191dp"
+        android:layout_height="51dp"
+        android:text="update"
+        android:backgroundTint="#6b9080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimpan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
